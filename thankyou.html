@@ -3,43 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شكراً لتواصلك | دواك</title>
+    <title>شكراً لك - دواك</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <style>
-        .thankyou-wrapper {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: var(--light);
-        }
-        .thankyou-card {
-            background: white;
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-            max-width: 500px;
-        }
-        .thankyou-card i {
-            font-size: 70px;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
-        .thankyou-card h1 { font-weight: 900; color: var(--dark); margin-bottom: 15px; }
-        .thankyou-card p { color: #666; margin-bottom: 30px; }
+        body { font-family: 'Cairo', sans-serif; text-align: center; padding: 100px 20px; background: #f8fbff; color: #1e272e; }
+        .card { max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        h1 { color: #2ecc71; font-size: 2.5rem; }
+        p { color: #576574; margin-bottom: 30px; }
+        .btn { background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%); color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; }
     </style>
 </head>
 <body>
-    <div class="thankyou-wrapper">
-        <div class="thankyou-card">
-            <i class="fas fa-check-circle"></i>
-            <h1>تم الإرسال بنجاح!</h1>
-            <p>شكراً لتواصلك مع فريق دواك. لقد استلمنا رسالتك وسنقوم بالرد عليك في أقرب وقت ممكن عبر بريدك الإلكتروني.</p>
-            <a href="index.html" class="btn-main">العودة للرئيسية</a>
-        </div>
+    <div class="card">
+        <h1>تم الإرسال بنجاح!</h1>
+        <p>شكراً لتواصلك مع "دواك". سيتواصل معك فريقنا في أقرب وقت ممكن.</p>
+        <a href="index.html" class="btn">العودة للرئيسية</a>
     </div>
 </body>
 </html>
