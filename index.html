@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دواك | حلول الرعاية الصحية الرقمية</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,11 +36,18 @@
             <div class="hero-content" data-aos="fade-up">
                 <h1>رعايتكم الصحية <br><span class="highlight">أذكى، أسرع، وأسهل</span></h1>
                 <p>تطبيق "دواك" يربطك بأفضل الأطباء والصيدليات في ثوانٍ معدودة. نحن نجمع لك الصيدليات، الأطباء، وتقاريرك الطبية في مكان واحد لرعاية صحية ذكية، آمنة، وفورية.</p>
-                <div class="hero-btns">
-                    <a href="https://github.com/Dreemcoin/dawak/releases/download/v1.0.0/app-arm64-v8a-release.apk" class="btn-primary" download="Dawak-App-v1.0.0.apk">
-                        <i class="fas fa-download"></i> تحميل APK (Android)
+                
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://github.com/Dreemcoin/dawak/releases/download/v1.0.0/app-arm64-v8a-release.apk" 
+                       class="btn-primary" 
+                       download="Dawak-App-v1.0.0.apk">
+                        <i class="fas fa-download"></i>
+                        <span>تحميل APK (Android)</span>
                     </a>
-                    <a href="#features" class="btn-secondary-outline">اكتشف المزيد</a>
+                    <a href="#features" class="btn-secondary-outline">
+                        <span>اكتشف المزيد</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -52,7 +62,7 @@
                 <div class="about-text" data-aos="fade-right">
                     <span class="sub-title">من نحن</span>
                     <h2>رؤيتنا هي تبسيط الوصول للرعاية الصحية</h2>
-                    <p>في "دواك"، نؤمن أن التكنولوجيا يجب أن تخدم الإنسان في أهم جوانب حياته: صحته. قمنا بتطوير منصة متكاملة تضمن لك جودة الخدمة الطبية بضغطة زر واحدة. نحن شريكك الصحي الدائم.</p>
+                    <p>في "دواك"، نؤمن أن التكنولوجيا يجب أن تخدم الإنسان في أهم جوانب حياته: صحته. قمنا بتطوير منصة متكاملة تضمن لك جودة الخدمة الطبية بضغطة زر واحدة.</p>
                     <div class="stats">
                         <div class="stat-item"><h4>+50K</h4><p>مستخدم</p></div>
                         <div class="stat-item"><h4>+200</h4><p>طبيب</p></div>
@@ -118,7 +128,7 @@
                             <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p>"التطبيق غير مفهومي للرعاية الصحية، سهولة الاستخدام وسرعة الاستجابة مذهلة. خدمة توصيل الدواء سريعة جداً."</p>
+                    <p>"التطبيق غير مفهومي للرعاية الصحية، سهولة الاستخدام وسرعة الاستجابة مذهلة."</p>
                 </div>
                 <div class="testimonial-item" data-aos="flip-right">
                     <div class="user-info">
@@ -128,30 +138,64 @@
                             <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p>"وفر علي عناء الذهاب للمستشفى في الحالات البسيطة، الاستشارات ممتازة ودقيقة ومريحة جداً."</p>
+                    <p>"وفر علي عناء الذهاب للمستشفى في الحالات البسيطة، الاستشارات ممتازة ودقيقة جداً."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-card" data-aos="zoom-out">
-                <div class="contact-content">
-                    <h2>انضم إلى عائلة دواك اليوم</h2>
-                    <p>لديك استفسار؟ نحن هنا لمساعدتك دائماً. تواصل معنا للحصول على الدعم.</p>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="الاسم الكامل" required>
-                            <input type="email" placeholder="البريد الإلكتروني" required>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper" data-aos="fade-up">
+            <div class="contact-info">
+                <h2>كن على اتصال بنا</h2>
+                <p>نحن نسعى دائماً لتقديم أفضل تجربة صحية. لا تتردد في طرح أي سؤال.</p>
+                <div class="info-items">
+                    <a href="mailto:support@dawak.sd" class="info-item" style="text-decoration: none; color: inherit;">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>البريد الإلكتروني</span>
+                            <p>support@dawak.sd</p>
                         </div>
-                        <textarea placeholder="رسالتك هنا... كيف يمكننا مساعدتك؟" rows="4"></textarea>
-                        <button type="submit" class="btn-submit">إرسال الآن <i class="fas fa-paper-plane"></i></button>
-                    </form>
+                    </a>
+                    <a href="https://wa.me/249965987972" target="_blank" class="info-item" style="text-decoration: none; color: inherit;">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <span>واتساب الدعم</span>
+                            <p>+249 965 987 972</p>
+                        </div>
+                    </a>
                 </div>
             </div>
+
+            <div class="contact-card">
+                <form action="https://formspree.io/f/mwvngkoj" method="POST" class="contact-form">
+                    <input type="hidden" name="_next" value="https://dreemcoin.github.io/dawak/thankyou.html">
+                    <input type="hidden" name="_subject" value="رسالة جديدة من موقع دواك!">
+                    
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>الاسم</label>
+                            <input type="text" name="name" placeholder="اسمك الكريم" required>
+                        </div>
+                        <div class="input-group">
+                            <label>البريد</label>
+                            <input type="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>الرسالة</label>
+                        <textarea name="message" placeholder="كيف يمكننا مساعدتك اليوم؟" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-modern">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer>
         <div class="container">
@@ -164,7 +208,6 @@
                     <a href="https://www.facebook.com/share/1CMPdVdkcQ/" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/249965987972"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="copyright">
@@ -173,10 +216,14 @@
         </div>
     </footer>
 
+    <a href="https://wa.me/249965987972" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>تحدث معنا</span>
+    </a>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
     </script>
 </body>
 </html>
-
