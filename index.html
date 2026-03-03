@@ -36,11 +36,8 @@
             <div class="hero-content" data-aos="fade-up">
                 <h1>رعايتكم الصحية <br><span class="highlight">أذكى، أسرع، وأسهل</span></h1>
                 <p>تطبيق "دواك" يربطك بأفضل الأطباء والصيدليات في ثوانٍ معدودة. نحن نجمع لك الصيدليات، الأطباء، وتقاريرك الطبية في مكان واحد لرعاية صحية ذكية، آمنة، وفورية.</p>
-                
                 <div class="hero-btns" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://github.com/Dreemcoin/dawak/releases/download/v1.0.0/app-arm64-v8a-release.apk" 
-                       class="btn-primary" 
-                       download="Dawak-App-v1.0.0.apk">
+                    <a href="https://github.com/Dreemcoin/dawak/releases/download/v1.0.0/app-arm64-v8a-release.apk" class="btn-primary" download="Dawak-App-v1.0.0.apk">
                         <i class="fas fa-download"></i>
                         <span>تحميل APK (Android)</span>
                     </a>
@@ -144,58 +141,55 @@
         </div>
     </section>
 
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="contact-wrapper" data-aos="fade-up">
-            <div class="contact-info">
-                <h2>كن على اتصال بنا</h2>
-                <p>نحن نسعى دائماً لتقديم أفضل تجربة صحية. لا تتردد في طرح أي سؤال.</p>
-                <div class="info-items">
-                    <a href="mailto:support@dawak.sd" class="info-item" style="text-decoration: none; color: inherit;">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <span>البريد الإلكتروني</span>
-                            <p>dawak-suport@gmail.com</p>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper" data-aos="fade-up">
+                <div class="contact-info">
+                    <h2>كن على اتصال بنا</h2>
+                    <p>نحن نسعى دائماً لتقديم أفضل تجربة صحية. لا تتردد في طرح أي سؤال.</p>
+                    <div class="info-items">
+                        <a href="mailto:dawak-suport@gmail.com" class="info-item" style="text-decoration: none; color: inherit;">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>البريد الإلكتروني</span>
+                                <p>dawak-suport@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/249965987972" target="_blank" class="info-item" style="text-decoration: none; color: inherit;">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span>واتساب الدعم</span>
+                                <p>+249 965 987 972</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <form action="https://formspree.io/f/mwvngkoj" method="POST" id="dawak-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>الاسم</label>
+                                <input type="text" name="name" placeholder="اسمك الكريم" required>
+                            </div>
+                            <div class="input-group">
+                                <label>البريد</label>
+                                <input type="email" name="email" placeholder="email@example.com" required>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://wa.me/249965987972" target="_blank" class="info-item" style="text-decoration: none; color: inherit;">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <span>واتساب الدعم</span>
-                            <p>+249965987972</p>
+                        <div class="input-group">
+                            <label>الرسالة</label>
+                            <textarea name="message" placeholder="كيف يمكننا مساعدتك اليوم؟" rows="4" required></textarea>
                         </div>
-                    </a>
+                        <button type="submit" id="submit-btn" class="btn-submit-modern">
+                            <span>إرسال الرسالة</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-
-            <div class="contact-card">
-                <form action="https://formspree.io/f/mwvngkoj" method="POST" class="contact-form">
-                    <input type="hidden" name="_next" value="https://dreemcoin.github.io/dawak/thankyou.html">
-                    <input type="hidden" name="_subject" value="رسالة جديدة من موقع دواك!">
-                    
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label>الاسم</label>
-                            <input type="text" name="name" placeholder="اسمك الكريم" required>
-                        </div>
-                        <div class="input-group">
-                            <label>البريد</label>
-                            <input type="email" name="email" placeholder="email@example.com" required>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label>الرسالة</label>
-                        <textarea name="message" placeholder="كيف يمكننا مساعدتك اليوم؟" rows="4" required></textarea>
-                    </div>
-                      <button type="submit" id="submit-btn" class="btn-submit-modern">
-                          <span>إرسال الرسالة</span>
-                       <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer>
         <div class="container">
@@ -224,8 +218,35 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
+
+        // التحكم في النموذج والتحويل لصفحة الشكر
+        const dawakForm = document.getElementById('dawak-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        dawakForm.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            const formData = new FormData(dawakForm);
+            const btnText = submitBtn.querySelector('span');
+            
+            submitBtn.disabled = true;
+            btnText.innerText = "جاري الإرسال...";
+
+            fetch(dawakForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                // التحويل الإجباري لصفحة الشكر لتعمل على GitHub Pages
+                window.location.href = "thankyou.html";
+            })
+            .catch(error => {
+                alert("عذراً، حدث خطأ في الاتصال. حاول مرة أخرى.");
+                submitBtn.disabled = false;
+                btnText.innerText = "إرسال الرسالة";
+            });
+        });
     </script>
 </body>
 </html>
-
-
